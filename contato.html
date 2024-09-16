@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <title>Senac Brasil | Contato</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="header">
+            <a href="index.html"><img src="assets/img/senac-logo.png" alt="logo senac"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+        <div class="mini-header">
+            <h1>Entre em contato conosco:</h1>
+        </div>
+        <div class="left">
+
+            <div class="contato">
+
+                <form action="submit" method="post">
+                    <label for="nome">Nome: </label>
+                    <input type="text" id="nome" placeholder="Digite seu nome." minlength="3" required>
+            
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="seuemail@email.com" required>
+            
+                    <label for="whatsapp">Whatsapp: </label>
+                    <input type="tel" id="whatsapp" placeholder="(00) 0 0000-0000" required>
+            
+                    <label for="msg">Digite uma mensagem: </label>
+                    <textarea id="msg" cols="30" rows="10"></textarea>
+            
+                    <label>Como prefere ser contatado? </label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="contatoEmail" name="contato" value="email">
+                        <label for="contatoEmail"> Email</label>
+            
+                        <input type="checkbox" id="contatoTelefone" name="contato" value="telefone">
+                        <label for="contatoTelefone"> Telefone</label>
+            
+                        <input type="checkbox" id="contatoWhatsapp" name="contato" value="whatsapp">
+                        <label for="contatoWhatsapp"> Whatsapp</label>
+                    </div>
+            
+                    <label for="horario">Qual horário prefere ser atendido? </label>
+                    <select id="horario">
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+            
+                    <button type="submit">Enviar</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7327.727597380283!2d-51.16023!3d-23.320700000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb435d5b264775%3A0xfd3a2c2dc9f2232f!2sSenac%20Londrina!5e0!3m2!1spt-BR!2sbr!4v1724609770981!5m2!1spt-BR!2sbr"
+                    width="800" height="800" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                <p>Rua: Raposo Tavares, 894, Centro - Bairro: Vila Larsen - Cidade: Londrina - PR - CEP 86010-58</p>
+    
+                <h3>
+                    <a href="mailto: londrina@pr.senac.br " target="_blank" rel="noopener noreferrer"><i
+                            class="bi bi-envelope-at-fill"> londrina@pr.senac.br</i></a>
+                    <a href="https://www.instagram.com/senacparana/" target="_blank" rel="noopener noreferrer"><i
+                            class="bi bi-instagram"> @senacparana</i></a>
+                    <a href="https://api.whatsapp.com/send?phone=554335725500&text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20cursos!%0A%0AVim%20com%20indicação%20do%20Marcos%20Junior%20Bueno%20Selzler."
+                        target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone-fill"> (43) 3572-5500</i></a>
+                </h3>
+            </div>
+        </div>
+        <footer>
+            <p>
+                &copy; Copyright Senac Brasil - 2024
+            </p>
+        </footer>
+            
+
+    </section>
+
+</body>
+
+</html>
